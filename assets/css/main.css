@@ -1,0 +1,39 @@
+body{
+	font-family: sans,arial,san-serif;
+	color: #555;
+}
+
+.main{
+	width: 960px;
+	margin: 0 auto;
+}
+
+.user-caption{
+	text-align: right;
+	padding: 10px;
+}
+
+form{
+
+}
+
+input[type=text],
+input[type=password]{
+	padding: 5px;
+	border: solid 1px #888;
+	margin: 3px;
+}
+
+input[type=submit]{
+	padding: 5px;
+	background: #555;
+	border:none;
+	color: #fefefe;
+	font-weight: bold;
+}
+
+.error{
+	background: #aaa;
+	padding: 5px;
+	margin: 10px 0;
+}

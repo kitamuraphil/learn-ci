@@ -6,3 +6,18 @@
   </head>
   <body>
   	<div class="main">
+  		<div class="menu">
+  			<ul>
+  				<li><?php echo anchor("home","Home"); ?></li>
+  			</li>
+  			<div class="user-caption">
+  				<?php
+  					if($this->session->userdata("username") != ""){
+  						echo $this->session->userdata("username");
+              echo " &bull; ".anchor("home/logout","Logout");
+  					}else{
+  						echo anchor("home/login","Login");
+  					}
+  				?>
+  			</div>
+  		</div>
