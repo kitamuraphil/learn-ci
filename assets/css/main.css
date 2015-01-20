@@ -6,6 +6,7 @@ body{
 .main{
 	width: 960px;
 	margin: 0 auto;
+	padding-top: 60px;
 }
 
 .user-caption{
@@ -24,12 +25,16 @@ input[type=password]{
 	margin: 3px;
 }
 
-input[type=submit]{
+/*input[type=submit]{
 	padding: 5px;
 	background: #555;
 	border:none;
 	color: #fefefe;
 	font-weight: bold;
+}*/
+
+.btn{
+	border-radius: 0;
 }
 
 .error{
