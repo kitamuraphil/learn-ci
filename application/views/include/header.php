@@ -8,7 +8,7 @@
   </head>
   <body>
   	<div class="main">
-       <nav class="navbar navbar-default navbar-fixed-top">
+      <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -25,15 +25,28 @@
             <li><a href="#about">About</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">
               <?php
                 if($this->session->userdata("username") != ""){
                   echo $this->session->userdata("username");
-                  echo " &bull; ".anchor("home/logout","Logout");
                 }else{
-                  echo anchor("home/login","Login");
+                  echo "Guest";
                 }
               ?>
+               <span class="caret"></span>
+              <ul class="dropdown-menu">
+                <?php if($this->session->userdata("is_logged_in")){?>
+
+                <li><?php echo anchor("home/logout","Logout"); ?></li>
+
+                <?php }else{ ?>
+
+                <li><?php echo anchor("home/login","Login"); ?></li>
+
+                <?php } ?>
+                
+              </ul>
             </li>
           </ul>
         </div><!--/.nav-collapse -->

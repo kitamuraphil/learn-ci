@@ -29,7 +29,8 @@ class Home extends CI_Controller {
 				//put details in session
 				$admin_data = array(
 					"username" => $admin->username,
-					"email" => $admin->email
+					"email" => $admin->email,
+					"is_logged_in"=>TRUE
 					);
 				$this->session->set_userdata($admin_data);
 				redirect("admin");
