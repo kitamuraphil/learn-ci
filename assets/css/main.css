@@ -1,29 +1,68 @@
-body{
-	font-family: sans,arial,san-serif;
-	color: #555;
+body {
+  padding-top: 70px;
+  color: #555;
+  scrollbar-face-color: #888;
+  
 }
+
+.footer{
+	margin-top: 20px;
+	color: #aaa;
+	padding: 20px 5px;
+	border-top: dotted 1px #cecece;
+	text-align: center;
+}
+h1,h2,h3{
+	color: #1D8E65;
+}
+
+p,
+ul.content li{
+	font-size: 16px;
+	line-height: 22px;
+	color: #888;
+}
+
+a.fav:hover,
+i.fav,
+.dashboard p i.fav{
+	color: #e67e22;
+}
+.side-quote{
+	margin: 100px 0;
+	font-size: 200%;
+	font-family:Georgia;
+	color: #bebebe;
+	border-left: solid 3px #f39c12;
+	padding-left: 10px;
+}
+
+/*table.table{
+	border-collapse: collapse;
+	margin: 10px 0;*/
+}
+
+.footer{
+	margin-top: 20px;
+	color: #aaa;
+	padding: 20px 5px;
+	border-top: dotted 1px #cecece;
+	text-align: center;
+}
+
 
 .main{
-	width: 960px;
-	margin: 0 auto;
-	padding-top: 60px;
+	/*width: 960px;*/
+	/*margin: 0 auto;*/
+	/*padding-top: 60px;*/
 }
 
-.user-caption{
+/*.user-caption{
 	text-align: right;
-	padding: 10px;
+	padding: 10px;*/
 }
 
-form{
 
-}
-
-input[type=text],
-input[type=password]{
-	padding: 5px;
-	border: solid 1px #888;
-	margin: 3px;
-}
 
 /*input[type=submit]{
 	padding: 5px;
@@ -33,12 +72,21 @@ input[type=password]{
 	font-weight: bold;
 }*/
 
-.btn{
-	border-radius: 0;
+/*.btn{
+	border-radius: 0;*/
 }
 
 .error{
 	background: #aaa;
 	padding: 5px;
 	margin: 10px 0;
+}
+
+.side-quote{
+	margin: 100px 0;
+	font-size: 200%;
+	font-family:Georgia;
+	color: #bebebe;
+	border-left: solid 3px #f39c12;
+	padding-left: 10px;
 }

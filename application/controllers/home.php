@@ -2,8 +2,10 @@
 
 class Home extends CI_Controller {
 
+
 	function __constructor(){
 		parent::__constructor();
+		
 	}
 
 	public function index()
@@ -12,6 +14,8 @@ class Home extends CI_Controller {
 		$data['main'] = "home/index";
 		$this->load->view("include/template",$data);
 	}
+
+
 
 	public function login($mode="form"){
 		if($mode=="form"){
@@ -46,4 +50,16 @@ class Home extends CI_Controller {
 		$this->session->sess_destroy();
 		redirect("home");
 	}
+
+	public function about()
+	{
+		$data['active']="about";
+		$data['main']= "home/about";
+		$this->load-> view("include/template",$data);
+	}
 }
+
+
+
+
+

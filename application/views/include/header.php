@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  	<title>Rental MS</title>
+  	<title>RentMS</title>
     <link href="<?php echo base_url();?>assets/bootstrap/css/bootstrap.css" rel="stylesheet">
   	<link href="<?php echo base_url();?>assets/css/main.css" rel="stylesheet">
 
@@ -17,12 +17,12 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Rental MS</a>
+          <a class="navbar-brand" href="#">RentMS</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li class="active"><?php echo anchor("home","Home"); ?></li>
-            <li><a href="#about">About</a></li>
+            <li><?php echo anchor("home/about","About"); ?></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li class="dropdown">
@@ -38,7 +38,11 @@
               <ul class="dropdown-menu">
                 <?php if($this->session->userdata("is_logged_in")){?>
 
-                <li><?php echo anchor("home/logout","Logout"); ?></li>
+                      <li><?php echo anchor("admin/agent","Agents"); ?></li>
+                      <li><?php echo anchor("admin/property","View Properties"); ?></li>
+                      <li><?php echo anchor("admin/property/form","Add Property"); ?></li>
+                      <li><?php echo anchor("home/logout","Logout"); ?></li>
+
 
                 <?php }else{ ?>
 
